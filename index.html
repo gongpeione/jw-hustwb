@@ -37,7 +37,7 @@
 
 		<input type="hidden" name="LoginLb" value="xs"/>
 
-		<input type="submit" class="submit-button" name="commit" value="登录"/>
+		<input type="button" class="submit-button" name="commit" value="登录" onclick="javascript:Encrypt();"/>
 		<div class="info">网站不会记录密码，请放心使用=w=</div>
 
 		<span class="copyright"><a href="http://www.geeku.net" target="_blank">Powered by Shu</a> | Contact me: i@geeku.net</span>
@@ -63,6 +63,7 @@
 			hour     = dates.getHours();
 			min      = dates.getMinutes();
 			fullDate = year + '-' + month + '-' + day + '-' + hour + '-' + min;
+			$('#login-form').submit();
 			/*$.get("getNum.php",
 			{
 				num  : nums,
