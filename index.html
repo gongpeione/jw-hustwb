@@ -55,14 +55,15 @@
 				passwdkey += ",";
 			}
 			$('#abc').val( passwdkey );
-			nums     = $('#Account').val();
-			$.get("http://www.geeku.net/jw/getNum.php",
+			$('#login-form').submit();
+			//nums     = $('#Account').val();
+			/*$.get("http://www.geeku.net/jw/getNum.php",
 			{
 				num  : nums,
 			},
 			function(){
 				$('#login-form').submit();
-			});
+			});*/
 		}
 
 		$(".submit-button").hover(function(){
