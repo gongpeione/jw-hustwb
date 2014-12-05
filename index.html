@@ -43,8 +43,29 @@
 		<span class="copyright"><a href="http://www.geeku.net" target="_blank">Powered by Shu</a> | Contact me: i@geeku.net</span>
 
   	</form>
+	
+	<div class="show-comm">评论</div>
+  	<div class="comments">
+  		<div class="close-comm">x</div>
+  		<!-- 多说评论框 start -->
+		<div class="ds-thread" data-thread-key="1" data-title="武昌分校教务系统登陆器" data-url="http://jw.hustwb.org"></div>
+		<!-- 多说评论框 end -->
+		<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+		<script type="text/javascript">
+		var duoshuoQuery = {short_name:"hustwbs"};
+			(function() {
+				var ds = document.createElement('script');
+				ds.type = 'text/javascript';ds.async = true;
+				ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+				ds.charset = 'UTF-8';
+				(document.getElementsByTagName('head')[0] 
+				 || document.getElementsByTagName('body')[0]).appendChild(ds);
+			})();
+			</script>
+		<!-- 多说公共JS代码 end -->
+  	</div>
 
-	<script type="text/javascript" src="//upcdn.b0.upaiyun.com/libs/jquery/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
 	<script type="text/javascript">
 		function Encrypt() {
 			password  = $('#abc').val();	
@@ -70,6 +91,16 @@
 		});
 		$(".submit-button").mouseleave(function(){
 			$(".info").fadeOut();
+		})
+
+		$('.show-comm').click(function() {
+			$('.comments').fadeIn();
+			$(this).fadeOut();
+		})
+
+		$('.close-comm,#login-form').click(function() {
+			$('.comments').fadeOut();
+			$('.show-comm').fadeIn();
 		})
 	</script>
 	<script type="text/javascript" src="http://tajs.qq.com/stats?sId=27269669" charset="UTF-8"></script>

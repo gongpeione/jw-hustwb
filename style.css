@@ -19,7 +19,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   box-sizing: border-box;  
 }  
 html { height: 100%; }  
-body { height: 100%; font-size: 62.5%; line-height: 1; font-family: 'Microsoft Yahei', Arial, Tahoma, sans-serif; overflow: hidden; }
+body { height: 100%; font-size: 62.5%; line-height: 1; font-family: Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体" ,sans-serif !important; overflow: hidden; }
 
 ::selection { background: #CCEBFF; color: #003E66; }  
 ::-moz-selection { background: #CCEBFF; color: #003E66; }  
@@ -113,4 +113,344 @@ h1 { font-size: 3.5em; text-align: center; margin-top: 10%; text-shadow: 0 0 10p
   .num span, .passwd span { font-size: 2em; margin-right: 10px; display: inline-block; padding: 10px; 0  }
   .num input, .passwd input { height: 30px; padding: 5px 10px; font-size: 1.4em;  }
   .submit-button { padding: 5px 10px; width: 20%; height: 40px; font-size: 2em; }
+}
+
+.show-comm {
+  position: fixed;
+  padding: 10px;
+  color: #eee;
+  cursor: pointer;
+  background: rgba(0,0,0,.4);
+  right: 20px;
+  bottom: 20px;
+}
+.comments {
+  position: fixed;
+  width: 600px;
+  right: 20px;
+  bottom: 20px;
+  max-height: 500px;
+  overflow: auto;
+  background: rgba(255,255,255,1);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: -2px -2px 10px rgba(0,0,0,.6);
+  display: none;
+}
+.close-comm {
+  font-family: Arial;
+  color: #666;
+  float: right;
+  padding: 5px 10px;
+  font-size: 2em;
+  line-height: ;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+.close-comm:hover {
+  border: 1px solid #ccc;
+}
+
+.ds-thread * {
+  text-shadow: none !important;
+}
+.ds-meta {
+  display: none !important;
+}
+#ds-thread #ds-reset .ds-paginator {
+  border: none !important;
+}
+#ds-thread #ds-reset .ds-post-toolbar {
+  position: relative;
+  width: 100%;
+  box-shadow: none
+}
+.ds-toolbar {
+  display: none;
+}
+.ds-powered-by a {
+  display: none;
+}
+.ds-textarea-wrapper ds-rounded-top {
+  background: #000 !impotrant;
+  float: left !important;
+}
+.ds-post-options, .ds-gradient-bg {
+  background: #FFF !important;
+}
+.ds-post-button {
+  width: 140px !important;
+  height: 2.4em !important;
+  background: #1763A6 !important;
+  color: #FFF !important;
+  font-family: 'Open Sans', Helvetica, Tahoma, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", SimSun, "宋体", Heiti, "黑体" ,sans-serif !important; 
+  font-weight: 600 !important;
+  font-size: 1.6em !important;
+  text-shadow: none !important;
+  float: right !important
+  position: absolute !important;
+  top: 50px !important;
+  border: none !important;
+  border-radius: 2px !important;
+  background: rgba(3,169,244,1) !important;
+  color: #FFF !important;
+}
+.ds-post-button: hover {
+  background: #4099e8 !important;
+}
+.ds-current {
+  color: #1763A6 !important;
+}
+.ds-comments-tab-duoshuo {
+  color: #1763A6 !important;
+  background: #EEEEEE !important;
+  border: none !important;
+}
+.ds-tab .ds-highlight {
+  color: #1763A6 !important;
+}
+#ds-bubble {
+  display: none;
+}
+.ds-post-self {
+  padding-left: 10px !important;
+}
+.ds-children {
+  margin-left: 0px !important;
+}
+.ds-post {
+  margin-top: 10px !important;
+  background: #FFF !important;
+  border: none !important;
+  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  border-radius: 2px;
+  padding-bottom: 5px !important;
+  margin-bottom: 20px !important;
+}
+.ds-children {
+  border: none !important;
+}
+.ds-children .ds-post {
+  box-shadow: none !important;
+  border-bottom: none !important;
+}
+.ds-comment-footer .ds-comment-actions {
+  display: none !important;
+}
+#ds-thread #ds-reset ul.ds-children .ds-avatar img {
+  margin-right: 20px !important;
+}
+.ds-powered-by a {
+  color: #FFF !important;
+  cursor: default !important;
+}
+.ds-powered-by a: honver {
+  cursor: default !important;
+}
+.ds-textarea-wrapper ds-rounded-top {
+  background: #fff !impotrant;
+  background-image: no-tepeat !important;
+}
+.ds-post-options, .ds-gradient-bg {
+  background: rgba(0,0,0,0.4) !important;
+}
+.ds-current {
+  color: rgba(0,0,0,0.4) !important;
+}
+.ds-comments-tab-duoshuo {
+  display: none !important;
+}
+.ds-tab .ds-highlight {
+  color: #1763A6 !important;
+}
+#ds-bubble {
+  display: none;
+}
+.ds-post-self {
+  padding-left: 10px !important;
+}
+.ds-comment-header {
+  display: inline;
+}
+.ds-comment-body p {
+  display: inline;
+  font-size: 1.2em !important;
+}
+.ds-comment-footer {
+  margin-top: 5px !important;
+}
+#ds-thread #ds-reset .ds-comment-body p {
+  font-size: 1em !important;
+}
+.ds-children {
+  margin-left: 0px !important;
+}
+.ds-children .ds-comment-footer {
+  margin-top: 5px !important;
+}
+#ds-thread #ds-reset li.ds-post {
+  color: rgb(114,114,114) !important;
+  font-size: 1em !important;
+  box-shadow: none !important;
+}
+#ds-thread #ds-reset ul.ds-children .ds-post {
+  background: none !important;
+  margin-bottom: 0px !important;
+}
+#ds-thread #ds-reset .ds-comments {
+  border-bottom: none !important;
+}
+.ds-children {
+  border: none !important;
+}
+.ds-post-self {
+  padding-bottom: 0 !important;
+}
+.ds-comment-footer .ds-comment-actions {
+  display: none !important;
+}
+#ds-thread #ds-reset .ds-post-self {
+  border-top: none !important;
+}
+.ds-avatar {
+  border-radius: 50% !important;
+}
+.ds-avatar img {
+  border-radius: 50% !important;
+  box-shadow: none !important;
+}
+#ds-reset .ds-highlight, #ds-thread #ds-reset .ds-login-buttons .ds-more-services, #ds-thread #ds-reset .ds-login-buttons .ds-more-services: hover {
+  color: #eee !important;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper {
+  background: #fff !important;
+  border: none;
+  border-radius: 2px 2px 0px 0px !important;
+}
+#ds-thread #ds-reset .ds-post-options {
+  margin-right: 0 !important;
+  border: 1px solid #ccc !important;
+  background: #fff !important;
+  border-radius: 0px 0px 2px 2px !important;
+}
+.ds-replybox {
+  padding-bottom: 50px !important;
+}
+.ds-smilies-tabs {
+  display: none;
+}
+#ds-smilies-tooltip .ds-smilies-container {
+  margin-left: 0 !important;
+}
+.ds-dialog-footer {
+  display: none;
+}
+.ds-sync {
+  display: none !important;
+}
+#ds-notify {
+  border: none !important;
+  border-radius: 2px !important;
+  color: #027DB9 !important;
+  max-width: 600px !important;
+  padding: 10px 20px !important;
+}
+#ds-notify #ds-reset ul.ds-notify-unread li a {
+  color: #ddd !important;
+  font-size: 1.2em !important;
+}
+#ds-notify #ds-reset a.ds-logo {
+  display: none !important;
+}
+#ds-notify #ds-reset ul.ds-notify-unread {
+  margin: 0 !important;
+}
+#ds-wrapper #ds-reset .ds-dialog-inner {
+  border: none;
+  background-image: none;
+  background: rgba(0,0,0,0.6);
+  box-shadow: none !important;
+  text-shadow: none;
+  color: #ddd !important;
+}
+#ds-wrapper #ds-reset .ds-dialog-inner a {
+  color: #ddd !important;
+}
+#ds-thread #ds-reset .ds-comment-body a, #ds-thread #ds-reset .ds-user-name {
+  color: rgb(114,114,114) !important;
+  font-weight: 400;
+}
+#ds-thread #ds-reset .ds-comment-footer a {
+  font-size: 1em !important;
+}
+.ds-post-repost,
+.ds-post-likes,
+.ds-post-report {
+  display: none !important;
+}
+#ds-thread #ds-reset .ds-time {
+  font-size: 1em !important;
+}
+#ds-thread #ds-reset .ds-user-name:after {
+  content: ':';
+  margin-left: 5px;
+}
+#ds-thread #ds-reset .ds-comment-body a:hover {
+  color: rgba(3,169,244,1) !important;
+}
+.ds-icon {
+  display: none !important;
+}
+#ds-reset .ds-avatar {
+  margin-right: 20px;
+}
+#ds-thread #ds-reset .ds-post-self {
+  padding: 10px 0px 10px 0px !important;
+}
+#ds-thread #ds-reset .ds-children  .ds-post-self {
+  padding: 0px !important;
+  margin-left: 60px !important;
+}
+#ds-thread #ds-reset .ds-textarea-wrapper textarea {
+  color: rgb(114,114,114) !important;
+  font-size: 1.4em !important;
+  padding: 20px !important;
+}
+#ds-thread #ds-reset .ds-comments-info {
+  display: none !important;
+}
+#ds-thread #ds-reset .ds-paginator a {
+  display: inline-block;
+  padding: 10px !important;
+  color: #333;
+  background: #fff;
+  border-radius: 3px !important;
+  border: 1px solid #ccc !important;
+  font-size: 1.4em !important;
+}
+#ds-thread #ds-reset .ds-paginator a: hover {
+  background: rgba(0,0,0,0.4);
+}
+#ds-thread #ds-reset .ds-paginator a.ds-current {
+  background:  rgba(3,169,244,1) !important;
+  color: #eee !important;
+  border: none !important;
+}
+#ds-thread #ds-reset .ds-paginator div.ds-border {
+  display: none;
+}
+#ds-notify {
+  background: rgba(255,255,255,0.2) !important;
+}
+#ds-wrapper #ds-reset h2 {
+  color: #ddd;
+}
+#ds-wrapper #ds-reset .ds-unread-list li {
+  color: #aaa;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+#ds-smilies-tooltip {
+        margin-top: -50px;
 }
