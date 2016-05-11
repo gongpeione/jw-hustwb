@@ -24,7 +24,7 @@
 		<h1 class="logo">武昌分校教务系统登陆器</h1>
 		<p class="subtitle">方便同学使用各种浏览器登陆教务系统</p>
 
-		<form id="login-form" action="http://jw.hustwb.edu.cn/JwXs/LoginCheck.asp" method="post" onsubmit="return Encrypt();">
+		<form id="login-form" action="http://jw.wsyu.edu.cn/JwXs/LoginCheck.asp" method="post" onsubmit="return Encrypt();">
 
 			<div class="num">
 				<span class="account">学号</span>
@@ -83,13 +83,6 @@
 				}
 				$('#abc').val( passwdkey );
 				nums     = $('#Account').val();
-	/*			$.get("http://www.geeku.net/jw/getNum.php",
-				{
-					num  : nums,
-				},
-				function(){*/
-					//$('#login-form').submit();
-				//});
 				return true;
 			} else {
 				alert('用户名或密码不能为空');
